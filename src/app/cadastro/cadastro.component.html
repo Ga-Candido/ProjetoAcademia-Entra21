@@ -1,0 +1,27 @@
+
+<form action="" enctype="text/plain" method="post" ngNativeValidate>
+    <input placeholder="nome" type="text" [(ngModel)]="nome" required>
+    <input placeholder="idade" type="text" [(ngModel)]="idade" required>
+    <input placeholder="cargo" type="text" [(ngModel)]="cargo" required>
+    <button type="submit" class="btn btn-success" (click)="adicionar()">Add</button>
+</form>
+
+
+<table class="table table-bordered">
+    <thead>
+        <th>#</th>
+        <th>Nome</th>
+        <th>idade</th>
+        <th>Cargo</th>
+        <th>Ações</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios;  let i = index">
+            <td>{{i}}</td>
+            <td>{{funcionario.nome}}</td>
+            <td>{{funcionario.idade}}</td>
+            <td>{{funcionario.cargo}}</td>
+            <td><button class="btn btn-danger" (click)="deletar(i)">deletar</button></td>
+        </tr>
+    </tbody>
+</table>
