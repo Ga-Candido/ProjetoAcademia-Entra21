@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SegurancaService } from './services/seguranca.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CreatorsComponent } from './creators/creators.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     MenuComponent,
     HomeComponent,
     CadastroComponent,
+    CreatorsComponent,
   ],
   imports: [
     BrowserModule,

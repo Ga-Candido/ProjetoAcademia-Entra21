@@ -14,6 +14,7 @@ import { Observable } from 'rxjs';
 export class SegurancaService implements CanActivate {
   logged: boolean = false;
   username!:string
+entrou: any;
   constructor(private router: Router) {}
   canActivate(
     route: ActivatedRouteSnapshot,
