@@ -11,6 +11,7 @@ import { SegurancaService } from './services/seguranca.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CreatorsComponent } from './creators/creators.component';
+import { TimeComponent } from './time/time.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CreatorsComponent } from './creators/creators.component';
     HomeComponent,
     CadastroComponent,
     CreatorsComponent,
+    TimeComponent,
   ],
   imports: [
     BrowserModule,

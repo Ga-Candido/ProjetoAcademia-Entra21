@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SegurancaService } from './services/seguranca.service';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { TimeComponent } from './time/time.component';
+
 
 
 
@@ -11,6 +13,7 @@ const routes: Routes = [
   {path:"",component:LoginComponent},
   {path:"home",component:HomeComponent,canActivate:[SegurancaService]}, 
   {path:"cadastro",component:CadastroComponent,canActivate:[SegurancaService]}, 
+  {path:"time", component:TimeComponent}
 ];
 
 @NgModule({
