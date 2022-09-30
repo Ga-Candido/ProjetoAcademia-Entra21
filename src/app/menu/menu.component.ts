@@ -41,16 +41,8 @@ export class MenuComponent implements OnInit {
               sub: [
                 { title: 'Lista', 
                 icon: 'fas fa-table',
-                route: 'funcionario/cadastro'  },
-                {
-                  title: 'Relatórios', 
-                  icon: 'fas fa-chart-pie',
-                  sub: [ 
-                        { title: 'Turmas', route: 'professor/relatorio/turmas'    },
-                        { title: 'Plano', route: 'professor/relatorio/plano'    },
-                        { title: 'Pagamento', route: 'professor/relatorio/pagamento'    }, 
-                  ],
-                },
+                route: ''  },
+              
               ],
             },
           ]);

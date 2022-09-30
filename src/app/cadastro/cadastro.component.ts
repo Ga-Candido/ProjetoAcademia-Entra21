@@ -7,34 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  nome!: string
+  nome!:  string
   idade!: string
   cargo!: string
+  plano!: string
 
   funcionarios: Array<any> = [
     {
       nome: "Gabriel",
       idade: "19",
-      cargo: "Personal"
+      cargo: "Personal",
+      plano: "2"
     },
     {
       nome: "Jessica",
       idade: "16",
-      cargo: "MODELO"
+      cargo: "",
+      plano: ""
 
     },
     {
       nome: "Emerson",
       idade: "16",
-      cargo: "Developer"
+      cargo: "Developer",
+      plano: ""
 
     },
     {
       nome: "Felipe",
       idade: "16",
-      cargo: "Developer"
-
+      cargo: "Developer",
+      plano: ""
+    },
+    {
+      nome: "",
+      idade: "",
+      cargo: "",
+      plano: ""
     }
+
   ]
 
   constructor() { }
@@ -48,17 +59,21 @@ export class CadastroComponent implements OnInit {
   }
 
   adicionar() {
-if (this.nome) {
-  this.funcionarios.push(
-    {
-      nome: this.nome,
-      idade: this.idade,
-      cargo: this.cargo
-    }
-  )
-} else {
- alert("Virus finalizado: Click no 'Ok' para instalar")
-}
     
+    if (this.nome) {
+
+      this.funcionarios.push(
+        {
+          nome: this.nome,
+          idade: this.idade,
+          cargo: this.cargo,
+          plano: this.plano
+        }
+        
+      )
+    } else {
+      alert("error")
+    }
+
   }
 }
