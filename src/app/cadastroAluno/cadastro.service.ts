@@ -28,4 +28,5 @@ export class CadastroService {
   delete(aluno:any):Observable<any> {
     return this.http.delete<any>(this.apiUrl + '/'+aluno.id);
   }
+  
 }

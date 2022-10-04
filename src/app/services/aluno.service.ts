@@ -13,15 +13,12 @@ export class AlunoService {
   getAll():Observable<any> {
     return this.http.get<any>(this.apiUrl );
   }
-  
   getById(aluno:any):Observable<any> {
     return this.http.get<any>(this.apiUrl + '/'+aluno.id );
   }
-  
   create(aluno:any):Observable<any> {
     return this.http.post<any>(this.apiUrl ,aluno);
   }
-
   update(aluno:any):Observable<any> {
     return this.http.put<any>(this.apiUrl+ '/'+aluno.id ,aluno);
   }

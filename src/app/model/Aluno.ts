@@ -1,9 +1,9 @@
 import { Pessoa } from './Pessoa';
 export class Aluno extends Pessoa {
-  notas: Array<number>;
-  constructor(nome: string, idade: number, notas: Array<number>) {
+  aluno: Array<Pessoa>;
+  constructor(nome: string, idade: number, aluno: Array<Pessoa>) {
     super(nome, idade);
-    this.notas = notas;
+    this.aluno = aluno;
   }
 
 

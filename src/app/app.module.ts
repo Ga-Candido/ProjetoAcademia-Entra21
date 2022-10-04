@@ -9,9 +9,10 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { SegurancaService } from './services/seguranca.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { CadastroComponent } from './cadastroAluno/cadastro.component';
 import { CreatorsComponent } from './creators/creators.component';
 import { TimeComponent } from './time/time.component';
+import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { TimeComponent } from './time/time.component';
     CadastroComponent,
     CreatorsComponent,
     TimeComponent,
+    CadastroAlunoComponent,
   ],
   imports: [
     BrowserModule,

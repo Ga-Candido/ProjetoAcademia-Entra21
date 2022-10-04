@@ -8,7 +8,7 @@ import { CadastroService } from './cadastro.service';
 })
 export class CadastroComponent implements OnInit {
 
-  nome!: string
+  nome!:  string
   idade!: string
   cargo!: string
   plano!: string

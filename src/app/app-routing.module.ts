@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SegurancaService } from './services/seguranca.service';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { CadastroComponent } from './cadastroAluno/cadastro.component';
 import { TimeComponent } from './time/time.component';
 
 
