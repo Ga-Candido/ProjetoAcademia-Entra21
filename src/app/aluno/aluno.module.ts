@@ -15,4 +15,4 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
   ]
 })
-export class AlunoModule { }
+export class AlunoModule { }  
