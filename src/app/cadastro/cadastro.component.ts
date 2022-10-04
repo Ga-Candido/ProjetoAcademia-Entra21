@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CadastroService } from './cadastro.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  nome!:  string
+  nome!: string
   idade!: string
   cargo!: string
   plano!: string
@@ -47,33 +48,43 @@ export class CadastroComponent implements OnInit {
     }
 
   ]
+  CadastroService: any;
 
   constructor() { }
 
   ngOnInit(): void {
 
   }
-
+  create(): void {
+    this.CadastroService
+          .create(this.funcionarios)
+          
+  }
+      
+        
   deletar(index: number) {
     this.funcionarios.splice(index, 1)
   }
 
-  adicionar() {
-    
-    if (this.nome) {
 
-      this.funcionarios.push(
-        {
-          nome: this.nome,
-          idade: this.idade,
-          cargo: this.cargo,
-          plano: this.plano
-        }
-        
-      )
-    } else {
-      alert("error")
-    }
 
-  }
+  
+  // adicionar() {
+
+  //   if (this.nome) {
+
+  //     this.funcionarios.push(
+  //       {
+  //         nome: this.nome,
+  //         idade: this.idade,
+  //         cargo: this.cargo,
+  //         plano: this.plano
+  //       }
+
+  //     )
+  //   } else {
+  //     alert("error")
+  //   }
+
+  // }
 }
