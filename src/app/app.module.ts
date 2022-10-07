@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreatorsComponent } from './creators/creators.component';
 import { TimeComponent } from './time/time.component';
 import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
+import { UsersComponent } from './users/users.component'
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.componen
     CreatorsComponent,
     TimeComponent,
     CadastroAlunoComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,

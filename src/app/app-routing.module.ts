@@ -7,6 +7,7 @@ import { TimeComponent } from './time/time.component';
 import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 import { CadastroEquipamentoComponent } from './cadastro-equipamento/cadastro-equipamento.component';
 import { CadastroFuncionarioComponent } from './cadastro-funcionario/cadastro-funcionario.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
   {path:"",component:LoginComponent},
@@ -14,7 +15,9 @@ const routes: Routes = [
   {path:"cadastro-aluno",component:CadastroAlunoComponent,canActivate:[SegurancaService]},
   {path:"cadastro-equipamento",component:CadastroEquipamentoComponent,canActivate:[SegurancaService]},
   {path:"cadastro-funcionario",component:CadastroFuncionarioComponent,canActivate:[SegurancaService]},
-  {path:"time", component:TimeComponent}
+  {path:"time", component:TimeComponent},
+  {path:"users", component:UsersComponent}
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
