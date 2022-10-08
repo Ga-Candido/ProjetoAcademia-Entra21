@@ -24,13 +24,13 @@ export class MenuComponent implements OnInit {
         catchError((error) => {
           return of([
             {
-              title: 'Alunos',
+              title: 'Clientes',
               color: 'text-dark',
               icon: 'fas fa-circle',
               sub: [
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
-                route: 'cadastro-aluno'  },
+                route: 'cadastro-cliente'  },
                 {
                   title: 'Lista', 
                 icon: 'fas fa-table',
