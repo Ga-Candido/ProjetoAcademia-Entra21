@@ -17,9 +17,9 @@ export class SistemaService {
     return this.http.get<any>(this.apiUrl + '/clientes');
   }
   getEquipamentos() {
-    return this.http.get<any>(this.apiUrl + '/clientes');
+    return this.http.get<any>(this.apiUrl + '/equipamentos');
   }
   getFuncionarios() {
-    return this.http.get<any>(this.apiUrl + '/clientes');
+    return this.http.get<any>(this.apiUrl + '/funcionarios');
   }
 }
